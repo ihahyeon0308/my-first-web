@@ -3,16 +3,65 @@
 <head>
     <title>TAB - html</title>
     <mata charset="utf-8"></mata>
+    <style>
+        a {
+            color:rgb(70, 70, 215);
+            text-decoration: none;
+        }
+        body{
+            margin:0;
+        }
+        h1 {
+            font-size:50px;
+            text-align: center;
+            border-bottom:3px solid gray;
+            margin:0;
+            padding:20px;
+        }
+       ol {
+        border-right:3px solid gray;
+        width:100px;
+        padding:20px;
+        margin:0;
+        }
+        #grid{
+          display:grid;
+          grid-template-columns: 150px 1fr; 
+          /* 150px는 <ol>지정 값이고, 1fr은<div> 값을 지정한 것이다 */
+        }
+        #grid ol{
+            padding-left:33px;
+        }
+        #grid #N{
+            padding-left:25px;
+        }
+        @media(max-width:800px){
+            #grid{
+          display:block;
+            }
+          ol {
+            border-right:none;
+            }  
+            h1 {
+                font-size:50px;
+                border-bottom:none;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1><a href="index.html">WEB</a></h1>
-    <ol>
-        <li><a href="TAB1.html">HTML</a></li>
-        <li><a href="TAB2.html">CSS</a></li>
-        <li><a href="TAB3.html">JavaScript</a></li>
-    </ol>
-    <h2>CSS</h2>
-    <p>And even though there may be dogs about the many things that happen in front of Kashi on the server board, such as flying rocks and meteors flying in front of Kashi, there is no one but me to light the residential village that makes you go crazy, and the scene that was removed like the wind is really something that anyone who saw it from the beginning cannot help but cry, and it is really so touching and I do not wish for the latest version of Boto. I am watching episode 20 now and I am so touched that the generation has come out and everything is shining properly and I have to say that it is a memory that I cannot know. Such feelings are strangely intertwined.</p>
-    <img src="banana.png" width="80%">
+    <div id="grid">
+        <ol>
+            <li><a href="TAB1.html">HTML</a></li>
+            <li><a href="TAB2.html">CSS</a></li>
+            <li><a href="TAB3.html">JavaScript</a></li>
+        </ol>
+        <div id="N">
+            <h2>CSS</h2>
+            <p>And even though there may be dogs about the many things that happen in front of Kashi on the server board, such as flying rocks and meteors flying in front of Kashi, there is no one but me to light the residential village that makes you go crazy, and the scene that was removed like the wind is really something that anyone who saw it from the beginning cannot help but cry, and it is really so touching and I do not wish for the latest version of Boto. I am watching episode 20 now and I am so touched that the generation has come out and everything is shining properly and I have to say that it is a memory that I cannot know. Such feelings are strangely intertwined.</p>
+            <img src="banana.png" width="80%">
+        </div>
+    </div>
 </body>
 </html>

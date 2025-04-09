@@ -3,16 +3,65 @@
 <head>
     <title>TAB - html</title>
     <mata charset="utf-8"></mata>
+    <style>
+        a {
+            color:rgb(70, 70, 215);
+            text-decoration: none;
+        }
+        body{
+            margin:0;
+        }
+        h1 {
+            font-size:50px;
+            text-align: center;
+            border-bottom:3px solid gray;
+            margin:0;
+            padding:20px;
+        }
+       ol {
+        border-right:3px solid gray;
+        width:100px;
+        padding:20px;
+        margin:0;
+        }
+        #grid{
+          display:grid;
+          grid-template-columns: 150px 1fr; 
+          /* 150px는 <ol>지정 값이고, 1fr은<div> 값을 지정한 것이다 */
+        }
+        #grid ol{
+            padding-left:33px;
+        }
+        #grid #N{
+            padding-left:25px;
+        }
+        @media(max-width:800px){
+            #grid{
+          display:block;
+            }
+          ol {
+            border-right:none;
+            }  
+            h1 {
+                font-size:50px;
+                border-bottom:none;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1><a href="index.html">WEB</a></h1>
-    <ol>
-        <li><a href="TAB1.html">HTML</a></li>
-        <li><a href="TAB2.html">CSS</a></li>
-        <li><a href="TAB3.html">JavaScript</a></li>
-    </ol>
-    <h2>JavaScript</h2>
-    <p>Shino seems to be talking a lot. He's a good teacher.. and why are you badmouthing Boruto? He's cute. He looks like Naruto. His personality is similar. And is it true that in Boruto there's a god-like being that would win if Naruto and Sasuke fought?? And I looked it up on the internet, is this really true?? Is that god-level monster from Boruto? - Look at Naruto and Sasuke combined. I was so shocked when I saw this that I just let out "Wow" ;; Seriously, that's fucking crazy.. If that's real, you really have to see it. It's not like it's going to destroy the world..</p>
-    <p>Wow, I really wanted to cry when I saw Naruto and Sasuke become like that.. I'm watching it because it's Borutog, but is this real..? Sigh.. I really want to see Sasuke.. I really wonder when they became god-level powerhouses. It reminds me of the old days, when I was in middle school, and I'm sad, happy, touched, and have complicated emotions.. Anyway, Naruto is truly the greatest masterpiece in anime..</p>
+    <div id="grid">
+        <ol>
+            <li><a href="TAB1.html">HTML</a></li>
+            <li><a href="TAB2.html">CSS</a></li>
+            <li><a href="TAB3.html">JavaScript</a></li>
+        </ol>
+        <div id="N">
+            <h2>JavaScript</h2>
+            <p>Shino seems to be talking a lot. He's a good teacher.. and why are you badmouthing Boruto? He's cute. He looks like Naruto. His personality is similar. And is it true that in Boruto there's a god-like being that would win if Naruto and Sasuke fought?? And I looked it up on the internet, is this really true?? Is that god-level monster from Boruto? - Look at Naruto and Sasuke combined. I was so shocked when I saw this that I just let out "Wow" ;; Seriously, that's fucking crazy.. If that's real, you really have to see it. It's not like it's going to destroy the world..</p>
+            <p>Wow, I really wanted to cry when I saw Naruto and Sasuke become like that.. I'm watching it because it's Borutog, but is this real..? Sigh.. I really want to see Sasuke.. I really wonder when they became god-level powerhouses. It reminds me of the old days, when I was in middle school, and I'm sad, happy, touched, and have complicated emotions.. Anyway, Naruto is truly the greatest masterpiece in anime..</p>
+        </div>
+    </div>
 </body>
 </html>
